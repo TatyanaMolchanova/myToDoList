@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     });
 
-
     var close = document.querySelectorAll('.to-do__close');
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
             parentLi.style.display = 'none';
         }
     }
-
 
     function newToDoItem() {
         var li = document.createElement('li');
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
         span.appendChild(cross);
         li.appendChild(span);
 
-
         var close = document.querySelectorAll('.to-do__close');
         for (i = 0; i < close.length; i++) {
             close[i].onclick = function() {
@@ -45,10 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 parentLi.style.display = 'none';
             }
         }
-
     }
 
-    
     document.querySelector('.to-do__btn').addEventListener('click', function() {
         newToDoItem();
     });
